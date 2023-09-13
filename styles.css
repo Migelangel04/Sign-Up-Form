@@ -63,7 +63,7 @@ main
 .title 
 {
     color: var(--header-text-color);
-    font-size: 2.2rem;
+    font-size: 4vw;
     text-align: center;
 }
 
@@ -79,7 +79,7 @@ main
     color: var(--default-text-color);
     display: flex;
     flex-direction: column;
-    font-size: 18px;
+    font-size: 1.5vw;
     gap: 1rem;
 }
 
@@ -97,7 +97,7 @@ main
 
 .descriptionTop p
 {
-    line-height: 2rem;
+    line-height: 30px;
 }
 
 
@@ -119,7 +119,7 @@ main
     flex: 1;
     flex-wrap: wrap;
     gap: 1.5rem;
-    font-size: 18px;
+    font-size: 1.5vw;
 }
 
 input, label
@@ -147,7 +147,7 @@ input
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
-    font-size: 1rem;
+    font-size: 1vw;
     gap: 1rem;
     padding-top: 30px;
 }
@@ -186,12 +186,35 @@ input:invalid
 
 @media only screen and (max-width: 732px) {
     
-    
+    main 
+    {
+        display: block;
+    }
+
+    .imageAndTitle
+    {
+        width: 100vw;
+    }
+
+    .outterForm
+    {
+        width: 100vw;
+    }
+
+    .textContent
+    {
+        font-size: 5vw;
+    }
+
+    .groupStyle,
+    .lowerForm
+    {
+        font-size: 3vw;
+    }
+
+
+
+
+
 
 }
-
-
-
-
-
-
