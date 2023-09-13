@@ -7,47 +7,80 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    
-    <div class="imageAndTitle" id="imageAndTitle">
 
-        <div class="heading">
-            <img src="./images/logo.jpeg" alt="logo" class="logo">
-            <p class="title" id="title">Wolf Print</h1>
-        </div>
+    <main>
+        <div class="imageAndTitle" id="imageAndTitle">
 
-    </div>
-
-    <div class="outterForm" id="outterForm">
-
-        <div class="textContent" id="textContent">
-            
-            <div class="descriptionTop" id="descriptionTop">
-                <p>
-                    This is not a real online service! You know you
-                    need something like this in you life to help you realize
-                    you deepest dreams.
-                </p>
-                <p>Sign up <em>now</em> to get started!</p> 
+            <div class="heading">
+                <img src="./images/logo.jpeg" alt="logo" class="logo">
+                <p class="title" id="title">Wolf Print</h1>
             </div>
-
-            <p class="descriptionBottom" id="descriptionBottom">
-                You <em>know</em> you want to.
-            </p>
-
+    
         </div>
+    
+        <div class="outterForm" id="outterForm">
+    
+            <div class="textContent" id="textContent">
+                
+                <div class="descriptionTop" id="descriptionTop">
+                    <p>
+                        This is not a real online service! You know you
+                        need something like this in you life to help you realize
+                        you deepest dreams.
+                    </p>
+                    <p>Sign up <em>now</em> to get started!</p> 
+                </div>
+    
+                <p class="descriptionBottom" id="descriptionBottom">
+                    You <em>know</em> you want to.
+                </p>
+    
+            </div>
+    
+            <form action="#" class="form" id="form" method="get">
+    
+                <div class="groupStyle">
+                    <p>Let's do this!</p>
+                    <div class="upperForm">
+                    
+                        <div class="input">
+                            <label for="firstName">FIRST NAME</label>
+                            <input type="text" id="firstName" name="userFirstName" minlength="8" maxlength="20" required>
+                        </div>
+                        <div class="input">
+                            <label for="lastName">LAST NAME</label>
+                            <input type="text" id="lastName" name="userLastName" minlength="8" maxlength="20" required>
+                        </div>
+                        <div class="input">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="userEmail" required>
+                        </div>
+                        <div class="input">
+                            <label for="phoneNumber">PHONE NUMBER</label>
+                            <input type="tel" id="phoneNumber" name="userPhoneNumber" required>
+                        </div>
+                        <div class="input">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="userPassword" minlength="8" maxlength="20" required>
+                        </div>
+                        <div class="input">
+                            <label for="passwordConfirm">CONFIRM PASSWORD</label>
+                            <input type="password" id="passwordConfirm" name="userConfirmPassword" minlength="8" maxlength="20" required>
+                        </div>
+                    
+                    </div>
 
-        <form action="#" class="form" id="form" method="get">
-
-            <p>Let's do this!</p>
-
-            <fieldset>
-                <label for="firstName">FIRST NAME</label>
-                <input type="text" id="firstName" name="userFirstName">
-            </fieldset>
-
-        </form>
-
-    </div>
+                    <div class="lowerForm">
+                        <button type="submit">Create Account</button>
+                        <p class="loginDirect">Already have an account? <a href="#">Log in</a></p>
+                    </div>
+                </div>
+    
+                
+            </form>
+    
+        </div>
+    </main>
 
 </body>
 </html>

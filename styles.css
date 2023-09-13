@@ -1,6 +1,7 @@
 :root
 {
     --default-background-color: #00001a;
+    --form-background-color: #00001a;
     --default-text-color: #f8f8f8;
     --header-text-color: #f8f8f8;
 }
@@ -16,13 +17,13 @@
 
 *
 {
-    font-family: Lobster, Bebas-Neue, sans-serif;
+    font-family: Bebas-Neue, Lobster, sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-body
+main
 {
     display: flex;
 }
@@ -44,6 +45,7 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 1rem;
     position: relative;
     background-color: rgb(0, 0, 0, 0.7); 
@@ -54,14 +56,14 @@ body
 
 .logo
 {
-    height: 20vh;
+    height: 10vh;
     mix-blend-mode: difference;
 }
 
 .title 
 {
     color: var(--header-text-color);
-    font-size: 3rem;
+    font-size: 2.2rem;
     text-align: center;
 }
 
@@ -77,8 +79,7 @@ body
     color: var(--default-text-color);
     display: flex;
     flex-direction: column;
-    padding: 80px;
-    font-size: 1.5rem;
+    font-size: 18px;
     gap: 1rem;
 }
 
@@ -88,26 +89,109 @@ body
 {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 30px;
 }
 
 .descriptionTop p
 {
-    line-height: 2.1rem;
+    line-height: 2rem;
 }
 
-.descriptionTop p,
-.descriptionBottom
-{
-    text-align: start;
-}
 
 /* ----------------------------- */
 
 /* Form */
 
-.form fieldset
+.groupStyle
 {
-    font-size: 12px;
+    background-color: var(--form-background-color);
+    box-shadow: 0 0 30px 5px #282828;
+    padding: 30px;
 }
+
+.upperForm
+{
+    padding-top: 10px;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    font-size: 18px;
+}
+
+input, label
+{
+    display: block;
+    width: 100%;
+}
+
+input
+{
+    border-radius: 12px;
+    padding: 3px;
+}
+
+.input
+{
+    width: 40%;
+}
+
+
+
+.lowerForm
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    font-size: 1rem;
+    gap: 1rem;
+    padding-top: 30px;
+}
+
+.lowerForm button
+{
+    padding: 10px 50px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: #f8f8f8;
+    border-radius: 12px;
+}
+
+a
+{
+    text-decoration: none;
+    color: var(--default-text-color);
+}
+
+a:visited
+{
+    color: purple;
+}
+
+input:valid
+{
+    border-color: green;
+}
+
+input:invalid
+{
+    border-color: #f8f8f8;
+}
+
+
+@media only screen and (max-width: 732px) {
+    
+    
+
+}
+
+
+
+
+
 
